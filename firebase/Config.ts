@@ -11,7 +11,7 @@ import {
   doc,
   getDocs,
   serverTimestamp,
-  updateDoc
+  updateDoc,
 } from "firebase/firestore";
 
 const firebaseConfig = {
@@ -20,7 +20,7 @@ const firebaseConfig = {
   projectId: "",
   storageBucket: "",
   messagingSenderId: "",
-  appId: ""
+  appId: "",
 };
 
 // Initialize Firebase
@@ -40,5 +40,5 @@ export {
   deleteDoc,
   doc,
   serverTimestamp,
-  updateDoc
+  updateDoc,
 };

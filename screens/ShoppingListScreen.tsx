@@ -56,7 +56,7 @@ const ShoppingListScreen = () => {
   //Update item: done
   const handleUpdate = async (itemID: string, done: boolean): Promise<void> => {
     const colRef = collection(firestore, ITEMS);
-    const docRef = doc(colRef, itemID);
+    const docRef = doc(firestore, ITEMS, itemID);
     try {
       if (done === false) {
         await updateDoc(docRef, {
